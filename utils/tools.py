@@ -88,7 +88,7 @@ def get_screen_info(question: str) -> dict:
                     ]
                 )
             ]
-            image_model = MODELS["gemini"]
+            image_model = MODELS["openai"]
             response = image_model.invoke(messages)
             return response.content
         
